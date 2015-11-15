@@ -35,7 +35,7 @@ public class Aprior {
     }
 
     /**
-     * Éú³ÉÒ»Ïî¼¯
+     * ç”Ÿæˆä¸€é¡¹é›†
      * @return
      */
     public Map getFirstCandidate(){
@@ -57,7 +57,7 @@ public class Aprior {
     }
 
     /**
-     * »ñÈ¡ÏÂ¼¶ºòÑ¡¼¯(µü´ú)
+     * è·å–ä¸‹çº§å€™é€‰é›†(è¿­ä»£)
      * @param prioriCandidate
      * @return
      */
@@ -97,7 +97,7 @@ public class Aprior {
 
 
     /**
-     * É¨ÃèÊı¾İ¼¯£¬Í³¼ÆºòÑ¡¼¯´ÎÊı
+     * æ‰«ææ•°æ®é›†ï¼Œç»Ÿè®¡å€™é€‰é›†æ¬¡æ•°
      * @param nextCandidate
      * @return
      */
@@ -122,7 +122,7 @@ public class Aprior {
     }
 
     /**
-     * Ïû³ı²»·ûºÏÌõ¼şµÄºòÑ¡¼¯
+     * æ¶ˆé™¤ä¸ç¬¦åˆæ¡ä»¶çš„å€™é€‰é›†
      * @param map
      * @return
      */
@@ -191,7 +191,7 @@ public class Aprior {
     }
 
     public void getRules(){
-        System.out.println("Ê¹ÓÃApriori Ö§³Ö¶ÈÎª£º"+minSupport+"µÃµ½µÄ¹ØÁª¹æÔò£º");
+        System.out.println("ä½¿ç”¨Apriori æ”¯æŒåº¦ä¸ºï¼š"+minSupport+"å¾—åˆ°çš„å…³è”è§„åˆ™ï¼š");
         Map<TreeSet<String>,Integer> firstCandidate = getFirstCandidate();
         Map<TreeSet<String>,Integer> allFrequentSet = new HashMap<>(firstCandidate);
         allFrequentSet.putAll(getAllSubSets(getNextCandidate(firstCandidate)));

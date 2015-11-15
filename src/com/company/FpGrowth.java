@@ -51,7 +51,7 @@ public class FpGrowth {
     }
 
     /**
-     * ¹¹½¨£¨Fp-Tree£© 1 Ïî¼¯
+     * æ„å»ºï¼ˆFp-Treeï¼‰ 1 é¡¹é›†
      *
      * @return
      */
@@ -220,7 +220,7 @@ public class FpGrowth {
     }
     public void getRules(){
         //FPGrowth(records,null);
-        System.out.println("Ê¹ÓÃFP-Growth Ö§³Ö¶ÈÎª£º"+minSupport+"µÃµ½µÄ¹ØÁª¹æÔò£º");
+        System.out.println("ä½¿ç”¨FP-Growth æ”¯æŒåº¦ä¸ºï¼š"+minSupport+"å¾—åˆ°çš„å…³è”è§„åˆ™ï¼š");
         Map<TreeSet<String>,Integer> firstCandidate = getFirstCandidate(records);
         Map<TreeSet<String>,Integer> allFrequentSet = new HashMap<>(firstCandidate);
         allFrequentSet.putAll(FPGrowth(records, null));
